@@ -1,9 +1,9 @@
 package com.comsciguide.springs;
 
 /*
-Interface
+Interface added
  */
 public interface Coach {
 
-    public void eat();
+    void eat();
 }
