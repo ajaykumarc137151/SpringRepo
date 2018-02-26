@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Define your beans here -->
+
+
+	<!-- The bean id is created and container will create a new instance for 
+		this. the scope for this bean is default. Hence for each container request 
+		it will give reference to the first created instance -->
+
+	<bean id="myCoach" class="net.cr.CricketCoach" />
+
+	
+
+	<!-- The bean id is created and container will create a new instance for 
+		this. the scope for this bean is singleton. Hence for each container request 
+		it will give reference to the first created instance -->
+
+	<bean id="Coach" class="net.cr.CricketCoach" scope="singleton" />
+
+
+
+	<!-- The bean id is created and container will create a new instance for 
+		this. the scope for this bean is singleton. Hence for each container request 
+		it will create a new instance and it returns the reference of newly created 
+		object -->
+
+	<bean id="multiCoach" class="net.cr.CricketCoach" scope="prototype" />
+
+</beans>
+
+
+
+
+

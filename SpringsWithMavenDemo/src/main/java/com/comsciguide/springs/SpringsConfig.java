@@ -4,13 +4,20 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringsConfig {
 
+
+
     public static void main(String[] args) {
+
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         Coach myCoach = (Coach) context.getBean("myCoach");
-        System.out.println();
+        System.out.println(myCoach.food);
+
+
         myCoach.eat();
+        TrackCoach theCoach = (TrackCoach) context.getBean("myCoach");
+        System.out.println(theCoach.getFood());
 
     }
 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Define your beans here -->
+
+	<!-- The container will create a new instance of CricketCoach CricketCoach 
+		myCoach = new CricketCoach(); Then the spring container will call the following 
+		methods. myCoach.setName(); The method name will be decided by container 
+		based on the property name similarly for property age also. -->
+
+	<!-- load the properties file
+	This property file should be in src folder -->
+	<context:property-placeholder location="classpath:sport.properties" />
+
+	<!-- The bean id is created and container will create a new instance for 
+		this -->
+	<bean id="myCoach" class="net.cr.CricketCoach">
+
+		<!-- set up the setter for injecting the values from the properties file 
+			Here the ${ } will be replaced with the value by spring container -->
+
+		<property name="name" value="${name}" />
+		<property name="age" value="${age}" />
+
+	</bean>
+
+
+</beans>
+
+
+
+
+

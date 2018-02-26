@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Define your beans here -->
+    
+    <!--  
+    
+    	Scene behind the Spring container for the below code
+    	TrackCoach myCoach = new TrackCoach();
+    	
+    	we need not to change the java applications. We just
+    	want to change the configuration file i.e. XML file
+    	for different implementation of objects.
+    	
+    	We just need to replace the new qualified class name
+    	in place of old class attribute.
+    	
+    	Now the <constructor-arg ref ="fortuneService"/>
+    	will makes the spring container to create a new object for 
+    	fortuneService and this object is passed with the name of 
+    	"fortuneService" (id name) as parameter for the constructor.
+    
+     -->
+    
+    <bean id="myCoach" class="net.cr.BaseballCoach">
+    
+    <!--  set up the setter  injection -->
+    	<property name ="happyFortune" ref ="happyFortune"/>
+    </bean>    
+    
+    <!--  Define the dependency -->
+    
+    <bean id="happyFortune"  class ="net.cr.HappyFortune" />
+      
+</beans>
+
+
+
+
+
