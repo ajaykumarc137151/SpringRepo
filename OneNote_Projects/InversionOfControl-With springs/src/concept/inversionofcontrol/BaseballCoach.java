@@ -12,4 +12,8 @@ public class BaseballCoach implements Coach {
         return "This is baseball class method";
     }
 
+    public void display(){
+        System.out.println("Inside display method");
+    }
+
 }

@@ -15,8 +15,11 @@ public class SpringApp {
         // get beans from the container
         Coach coach = context.getBean("myCoach", Coach.class);
 
+        BaseballCoach bbcoach = (BaseballCoach) context.getBean("bbCoach");
+
         //call the method with the coach object
         System.out.println(coach.getWorkOut());
+        bbcoach.display();
 
         // close the context object
         context.close();

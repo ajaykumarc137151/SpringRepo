@@ -19,6 +19,7 @@
      -->
 
     <bean id="myCoach" class="concept.inversionofcontrol.TrackCoach"/>
+    <bean id="bbCoach" class="concept.inversionofcontrol.BaseballCoach"/>
 
 </beans>
 

@@ -15,7 +15,6 @@ public class BaseballCoach implements Coach {
 	 * BaseballCoach constructor in which HappyFortune class, instance
 	 * variable is initialized.
 	 */
-
 	public BaseballCoach(HappyFortune happyFortune) {
 		this.happyFortune = happyFortune;
 	}
