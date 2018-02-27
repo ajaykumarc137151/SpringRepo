@@ -36,8 +36,8 @@ public class CricketCoach {
 		System.out.println("this is destroy method");
 	}
 	
-	public void destroyMethodd(){
+	/*public void destroyMethodd(){
 		System.out.println("this is destroy methoddddd");
-	}
+	}*/
 
 }

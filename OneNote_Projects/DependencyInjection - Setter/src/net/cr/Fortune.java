@@ -4,7 +4,7 @@ package net.cr;
  * THis interface is just for other classes to implement. we can directly define
  * new methods in other classes instead of implementing this interface methods.
  * 
- * @author chku0616
+ * @author ajay
  *
  */
 public interface Fortune {

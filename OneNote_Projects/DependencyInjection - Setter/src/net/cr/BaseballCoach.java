@@ -11,6 +11,16 @@ public class BaseballCoach implements Coach {
 
 	private HappyFortune happyFortune;
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	private String name;
+
 	/**
 	 * The getter and setter methods for the dependency injection
 	 * For dependency injection, only the Setter method is required.

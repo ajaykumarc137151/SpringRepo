@@ -32,12 +32,16 @@ public class MainApp {
 		 * The cast is needed, since it returns the Generic object
 		 */
 		CricketCoach theCoach = (CricketCoach) context.getBean("myCoach");
+
+		Fruit myFruit = context.getBean("fruit", Fruit.class);
 		
 		//call the method with the CricketCoach object
 		System.out.println(theCoach.getName());
 		
 		//call the method with the CricketCoach object
 		System.out.println(theCoach.getAge());
+
+		System.out.println(myFruit.getName());
 		
 		
 	}

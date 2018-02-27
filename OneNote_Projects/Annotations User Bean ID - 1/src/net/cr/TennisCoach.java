@@ -11,16 +11,14 @@ import org.springframework.stereotype.Component;
  *            passed in the component. Here it is "Tennis". It will register the
  *            bean with that name.
  * 
- * @author chku0616
+ * @author ajay
  *
  */
-@Component("Tennis")
+@Component("tennis")
 public class TennisCoach implements Coach {
 
 	public void workOut() {
-
 		System.out.println("This is TennisCoach workout method");
-
 	}
 
 }

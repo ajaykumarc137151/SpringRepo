@@ -21,7 +21,7 @@
 	<bean id="myCoach" 
 	    class="net.cr.CricketCoach" 
 	    init-method="startUpMethod"
-		destroy-method="destroyMethodd" />
+		destroy-method="destroyMethod" />
 
 </beans>
 

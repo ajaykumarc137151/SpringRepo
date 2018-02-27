@@ -1,6 +1,6 @@
 package net.cr;
 
-public class HappyFortune  {
+public class HappyFortune implements Fortune  {
 
 	// The method implemented for the Fortune.java Class
 	public String getFortune(){

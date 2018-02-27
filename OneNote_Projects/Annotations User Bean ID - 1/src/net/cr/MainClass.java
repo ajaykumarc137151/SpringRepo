@@ -15,10 +15,14 @@ public class MainClass {
 		context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
 		// get the bean from the container
-		TennisCoach theCoach = (TennisCoach) context.getBean("Tennis");
+		TennisCoach theCoach = (TennisCoach) context.getBean("tennis");
 
 		// get the method from the bean
 		theCoach.workOut();
+
+		Fruits fruit = context.getBean("fruits", Fruits.class);
+
+		System.out.println(fruit.getName());
 		
 		//Close the context.
 		context.close();

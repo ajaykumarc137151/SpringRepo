@@ -21,7 +21,7 @@
     	We just need to replace the new qualified class name
     	in place of old class attribute.
     	
-    	Now the <constructor-arg ref ="fortuneService"/>
+    	Now the <property name ="happyFortune" ref ="happyFortune"/>
     	will makes the spring container to create a new object for 
     	fortuneService and this object is passed with the name of 
     	"fortuneService" (id name) as parameter for the constructor.
@@ -32,7 +32,12 @@
     
     <!--  set up the setter  injection -->
     	<property name ="happyFortune" ref ="happyFortune"/>
-    </bean>    
+
+    </bean>
+
+    <bean id="baseballCoach" class="net.cr.BaseballCoach">
+        <property name="name" value="ajay"/>
+    </bean>
     
     <!--  Define the dependency -->
     

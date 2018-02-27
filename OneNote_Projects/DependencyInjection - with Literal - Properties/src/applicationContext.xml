@@ -8,14 +8,19 @@
 
 	<!-- Define your beans here -->
 
-	<!-- The container will create a new instance of CricketCoach CricketCoach 
-		myCoach = new CricketCoach(); Then the spring container will call the following 
+	<!-- The container will create a new instance of CricketCoach
+		CricketCoach myCoach = new CricketCoach();
+		Then the spring container will call the following
 		methods. myCoach.setName(); The method name will be decided by container 
 		based on the property name similarly for property age also. -->
 
 	<!-- load the properties file
-	This property file should be in src folder -->
-	<context:property-placeholder location="classpath:sport.properties" />
+	This property file should be in src folder
+
+	 and only one file it will read which is defined first -->
+	<context:property-placeholder location="classpath:sport.file" />
+
+	<context:property-placeholder location="classpath:fruits.properties" />
 
 	<!-- The bean id is created and container will create a new instance for 
 		this -->
@@ -24,12 +29,15 @@
 		<!-- set up the setter for injecting the values from the properties file 
 			Here the ${ } will be replaced with the value by spring container -->
 
-		<property name="name" value="${name}" />
+		<property name="name" value="${sport.name}" />
 		<property name="age" value="${age}" />
 
 	</bean>
 
 
+	<bean id="fruit" class="net.cr.Fruit">
+		<property name="name" value="${fruits.name}" />
+	</bean>
 </beans>
 
 

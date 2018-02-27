@@ -32,6 +32,7 @@ public class SpringApp {
 		 * The cast is needed, since it returns the Generic object
 		 */
 		Coach theCoach = (Coach) context.getBean("myCoach");
+		BaseballCoach bbCoach = context.getBean("baseballCoach", BaseballCoach.class);
 		
 		//call the method with the coach object
 		System.out.println(theCoach.getWorkOut());
@@ -46,6 +47,7 @@ public class SpringApp {
 		
 		//call the method with the coach object
 		System.out.println(theCoach.getFortuneMethod());
+		System.out.println(bbCoach.getName());
 		
 	}
 
