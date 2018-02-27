@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="267c016e-b1d2-4848-abff-598df1bdee81" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Annotations User Bean ID - 1/src/net/cr/Fruits.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DependencyInjection - with Literal - Properties/src/fruits.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DependencyInjection - with Literal - Properties/src/net/cr/Fruit.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DependencyInjection - with Literal - Properties/src/sport.file" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Annotations User Bean ID - 1/src/net/cr/MainClass.java" afterPath="$PROJECT_DIR$/Annotations User Bean ID - 1/src/net/cr/MainClass.java" />
       <change beforePath="$PROJECT_DIR$/Annotations User Bean ID - 1/src/net/cr/TennisCoach.java" afterPath="$PROJECT_DIR$/Annotations User Bean ID - 1/src/net/cr/TennisCoach.java" />
-      <change beforePath="$PROJECT_DIR$/BeanScopesMethods/src/applicationContext.xml" afterPath="$PROJECT_DIR$/BeanScopesMethods/src/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/BeanScopesMethods/src/net/cr/CricketCoach.java" afterPath="$PROJECT_DIR$/BeanScopesMethods/src/net/cr/CricketCoach.java" />
-      <change beforePath="$PROJECT_DIR$/DependencyInjection - Setter/src/applicationContext.xml" afterPath="$PROJECT_DIR$/DependencyInjection - Setter/src/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/DependencyInjection - Setter/src/net/cr/BaseballCoach.java" afterPath="$PROJECT_DIR$/DependencyInjection - Setter/src/net/cr/BaseballCoach.java" />
-      <change beforePath="$PROJECT_DIR$/DependencyInjection - Setter/src/net/cr/Coach.java" afterPath="$PROJECT_DIR$/DependencyInjection - Setter/src/net/cr/Coach.java" />
-      <change beforePath="$PROJECT_DIR$/DependencyInjection - Setter/src/net/cr/Fortune.java" afterPath="$PROJECT_DIR$/DependencyInjection - Setter/src/net/cr/Fortune.java" />
-      <change beforePath="$PROJECT_DIR$/DependencyInjection - Setter/src/net/cr/HappyFortune.java" afterPath="$PROJECT_DIR$/DependencyInjection - Setter/src/net/cr/HappyFortune.java" />
-      <change beforePath="$PROJECT_DIR$/DependencyInjection - Setter/src/net/cr/SpringApp.java" afterPath="$PROJECT_DIR$/DependencyInjection - Setter/src/net/cr/SpringApp.java" />
-      <change beforePath="$PROJECT_DIR$/DependencyInjection - with Literal - Properties/src/applicationContext.xml" afterPath="$PROJECT_DIR$/DependencyInjection - with Literal - Properties/src/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/DependencyInjection - with Literal - Properties/src/net/cr/MainApp.java" afterPath="$PROJECT_DIR$/DependencyInjection - with Literal - Properties/src/net/cr/MainApp.java" />
-      <change beforePath="$PROJECT_DIR$/DependencyInjection - with Literal - Properties/src/sport.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DependencyInjection - with Literal - XML/src/net/cr/MainApp.java" afterPath="$PROJECT_DIR$/DependencyInjection - with Literal - XML/src/net/cr/MainApp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,10 +38,10 @@
         <entry file="file://$PROJECT_DIR$/Annotations User Bean ID - 1/src/net/cr/TennisCoach.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding>
-                <element signature="e#683#684#0" expanded="true" />
-                <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#747#748#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,9 +110,9 @@
         <option value="$PROJECT_DIR$/BeanScopesMethods/src/applicationContext.xml" />
         <option value="$PROJECT_DIR$/BeansScopeAndLifeCycle/src/applicationContext.xml" />
         <option value="$PROJECT_DIR$/BeansScopeAndLifeCycle/src/net/cr/MainApp.java" />
-        <option value="$PROJECT_DIR$/Annotations User Bean ID - 1/src/net/cr/TennisCoach.java" />
         <option value="$PROJECT_DIR$/Annotations User Bean ID - 1/src/net/cr/Fruits.java" />
         <option value="$PROJECT_DIR$/Annotations User Bean ID - 1/src/net/cr/MainClass.java" />
+        <option value="$PROJECT_DIR$/Annotations User Bean ID - 1/src/net/cr/TennisCoach.java" />
       </list>
     </option>
   </component>
@@ -881,10 +863,10 @@
     <entry file="file://$PROJECT_DIR$/Annotations User Bean ID - 1/src/net/cr/TennisCoach.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding>
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
           </folding>
         </state>
       </provider>
