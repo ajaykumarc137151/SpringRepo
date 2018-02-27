@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  *            corresponding package, then it scan all the files inside that
  *            package for the "component" and register the beans with parameter
  *            passed in the component. Here it is "Tennis". It will register the
- *            bean with that name..
+ *            bean with that name.
  * 
  * @author ajay
  *
