@@ -20,9 +20,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 
-	private FortuneService fortuneService;
+	private FortuneService fortuneService1;
 	
 	FortuneService fortuneService2;
+
+	private HappyFortuneService service3;
+
+	private CricketCoach cricketCoach;
 
 	/**
 	 * This will automatically inject the FortuneService object into this coach
@@ -31,8 +35,6 @@ public class TennisCoach implements Coach {
 	 * annotation DI setter method.
 	 * 
 	 * This default constructor is just for simply to understand what is happening at the behind the scenes
-	 * 
-	 * @param fortuneService
 	 */
 	
 	public TennisCoach() {
@@ -47,7 +49,7 @@ public class TennisCoach implements Coach {
 	
 	@Autowired
 	public void setFortune(FortuneService fortuneService) {
-		this.fortuneService = fortuneService;
+		this.fortuneService1 = fortuneService;
 	}
 	
 	@Autowired
@@ -55,11 +57,31 @@ public class TennisCoach implements Coach {
 		this.fortuneService2 = fortuneService;
 	}
 
-	public void workOut() {
+    /**
+     * @Autowired it will works for more than 1 parameter also. Here two parameters are initialized.
+     * @param service
+     * @param cricketCoach
+     */
+	@Autowired
+	public void setFortuneService2(HappyFortuneService service, CricketCoach cricketCoach){
+		this.service3 = service;
+		this.cricketCoach = cricketCoach;
+	}
+
+    public void workOut() {
 
 		System.out.println("This is TennisCoach workout method");
-		fortuneService.getFortune();
-		fortuneService2.getFortune();
+
+        // The same object will be injected for all the @Autowired statements
+        System.out.println(fortuneService1);
+        System.out.println(fortuneService2);
+        System.out.println(service3);
+
+//      fortuneService1.getFortune();
+//		fortuneService2.getFortune();
+//		service3.getFortune();
+
+        System.out.println(cricketCoach.getName());
 
 	}
 

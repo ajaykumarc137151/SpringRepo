@@ -11,9 +11,8 @@ import org.springframework.stereotype.Component;
  *            package for the "component" and register the beans with default
  *            id, which will be the class name with the first letter with lower
  *            case. here it is "tennisCoach" bean id.
- * 
- * 
- * @author chku0616
+ *
+ * @author ajay
  *
  */
 
@@ -34,13 +33,15 @@ public class TennisCoach implements Coach {
 		this.fortuneService = fortuneService;
 	}
 
-	public void workOut() {
-
-		System.out.println("This is TennisCoach workout method");
-		fortuneService.getFortune();
-
+	@Autowired
+	public void methodForFortuneService(FortuneService fortuneService){
+		this.fortuneService = fortuneService;
+		this.fortuneService.getFortune();
 	}
 
-	
+	public void workOut() {
+		System.out.println("This is TennisCoach workout method");
+		fortuneService.getFortune();
+	}
 
 }
