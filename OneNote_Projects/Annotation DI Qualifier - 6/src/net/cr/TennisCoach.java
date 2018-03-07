@@ -39,6 +39,10 @@ public class TennisCoach implements Coach {
 	@Qualifier("randomService")
 	private FortuneService fortuneService;
 
+	@Autowired
+	@Qualifier("happyFortuneService")
+	private FortuneService fortuneService2;
+
 	public TennisCoach() {
 		System.out.println("This is tennis default constructor");
 	}
@@ -47,6 +51,7 @@ public class TennisCoach implements Coach {
 
 		System.out.println("This is TennisCoach workout method");
 		fortuneService.getFortune();
+		fortuneService2.getFortune();
 
 	}
 

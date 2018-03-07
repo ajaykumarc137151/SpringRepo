@@ -26,6 +26,8 @@ public class MainClass {
 		//print the object memory
 		System.out.println(theCoach1);
 
+		theCoach.workOut();
+
 		// Close the context.
 		context.close();
 
