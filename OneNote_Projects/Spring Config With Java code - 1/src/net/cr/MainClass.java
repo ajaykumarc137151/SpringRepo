@@ -2,7 +2,7 @@ package net.cr;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class JavaConfig {
+public class MainClass {
 
     public static void main(String[] args) {
 
@@ -14,15 +14,15 @@ public class JavaConfig {
          * The constructor is called whenever there is a new request from the
          * container for the object creation
          *
-         * previously we have used ClassPathXMLApplicationContext class for
+         * previously we have used @ClassPathXMLApplicationContext class for
          * reading the spring configuration file from XML. Now it is
-         * AnnotationConfigApplicationContext class we need to use to read the
+         * @AnnotationConfigApplicationContext class we need to use to read the
          * spring configuration from the java class
          */
 
         // read the spring configuration file
         AnnotationConfigApplicationContext context =
-                new AnnotationConfigApplicationContext(SportConfig.class);
+                new AnnotationConfigApplicationContext(JavaConfiguration.class);
 
         // get the bean from the container
         Coach theCoach = (Coach) context.getBean("tennisCoach");

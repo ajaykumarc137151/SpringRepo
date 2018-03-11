@@ -5,11 +5,7 @@ public class CricketCoach {
 	private String name;
 	private int age;
 
-	/**
-	 * Getter and setter methods for injecting the literal values
-	 * 
-	 * @return
-	 */
+
 
 	public String getName() {
 		return name;

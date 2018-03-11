@@ -1,16 +1,7 @@
 /**
  * Useful files for the project are :
- * 
- * Fortune.java	- interface 
- * FortuneService.java - implements the Fortune.java interface
- * BaseballCoach.java - FortuneServie object is initialized with DI
- * TrackCoach.java - FortuneServie object is initialized with DI
- * SpringApp.java - Main method for execution, get beans, call methods
- * applicationContext.xml - Configuration file for spring container.
- * 
- *  
- * previous app files:
- * MyApp.java, Coach.java
+ *
+ * This Project is about the Bean scope and its life cycle
  */
 
 package net.cr;

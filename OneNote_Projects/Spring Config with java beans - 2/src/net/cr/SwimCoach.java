@@ -10,7 +10,7 @@ public class SwimCoach implements Coach {
 
 	@Override
 	public void workOut() {
-		System.out.println("swimcoach work out method");
+		System.out.println("swim coach workout method");
 		fortuneService.getFortune();
 	}
 }

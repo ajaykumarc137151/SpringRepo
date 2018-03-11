@@ -11,6 +11,8 @@
     even though we use component in one class also. -->
     
 	<context:component-scan base-package="net.cr" />
+	<context:property-placeholder location="foo.properties" />
+
 
 
 </beans>

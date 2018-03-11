@@ -1,8 +1,5 @@
 package net.cr;
 
-
-
-
 public class HappyFortuneService implements FortuneService {
 
 	public void getFortune() {

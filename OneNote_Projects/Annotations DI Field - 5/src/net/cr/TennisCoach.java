@@ -1,6 +1,7 @@
 package net.cr;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 /**
@@ -31,6 +32,13 @@ public class TennisCoach implements Coach {
 	@Autowired
 	private FortuneService fortuneService;
 
+	// values can be injected using the properties file.
+	@Value("${name}")
+	private String name;
+
+	@Value("${foo.id}")
+	private Integer id;
+
 	public TennisCoach() {
 		System.out.println("This is tennis default constructor");
 	}
@@ -39,7 +47,8 @@ public class TennisCoach implements Coach {
 
 		System.out.println("This is TennisCoach workout method");
 		fortuneService.getFortune();
-
+		System.out.println("name = " + name);
+		System.out.println("id = " + id);
 	}
 
 }
