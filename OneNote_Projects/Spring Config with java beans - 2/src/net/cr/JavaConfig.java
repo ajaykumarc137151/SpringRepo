@@ -2,6 +2,7 @@ package net.cr;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 /**
  * this is the configuration file for spring container.
@@ -13,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
  *
  */
 @Configuration
+@PropertySource("classpath:sport.properties")
 public class JavaConfig {
 
 	// define method for injecting the dependency
